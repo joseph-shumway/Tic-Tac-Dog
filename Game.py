@@ -2,6 +2,7 @@
 Platformer Game
 """
 import arcade
+import Tools
 
 # Constants
 SCREEN_WIDTH = 666
@@ -34,6 +35,7 @@ class MyGame(arcade.Window):
         # Our physics engine
         self.physics_engine = None
         self.time = None
+        self.grid = None
 
         arcade.set_background_color(arcade.csscolor.MAROON)
 
@@ -44,6 +46,7 @@ class MyGame(arcade.Window):
         self.wall_list = arcade.SpriteList()
         self.coin_list = arcade.SpriteList()
         self.time = 0
+        self.grid = Tools.Grid()
 
         # Set up the player, specifically placing it at these coordinates.
         image_source = ":resources:images/tiles/boxCrate_double.png"
@@ -64,6 +67,8 @@ class MyGame(arcade.Window):
         # Draw our sprites
         self.player_list.draw()
         arcade.draw_text(str(self.time), 100, 100, arcade.color.WHITE, 12)
+        self.grid.draw()
+
 
     def on_key_press(self, key, modifiers):
         """Called whenever a key is pressed. """
