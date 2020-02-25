@@ -21,12 +21,18 @@ class MyGame(arcade.Window):
     Main application class.
     """
 
+    #
+    # Init -----------------------------------------------------------------------------------------------------------
+    #
+
     def __init__(self):
 
         # Call the parent class and set up the window
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
 
         # These are 'lists' that keep track of our sprites.
+        self.coin_list = arcade.SpriteList()
+        self.wall_list = arcade.SpriteList()
         self.player_list = None
 
         # Separate variable that holds the player sprite
@@ -39,12 +45,14 @@ class MyGame(arcade.Window):
 
         arcade.set_background_color(arcade.csscolor.MAROON)
 
+    #
+    # Setup ----------------------------------------------------------------------------------------------------------
+    #
+
     def setup(self):
         """ Set up the game here. Call this function to restart the game. """
         # Create the Sprite lists
         self.player_list = arcade.SpriteList()
-        self.wall_list = arcade.SpriteList()
-        self.coin_list = arcade.SpriteList()
         self.time = 0
         self.grid = Tools.Grid()
 
@@ -58,6 +66,16 @@ class MyGame(arcade.Window):
         # Create the 'physics engine'
         self.physics_engine = arcade.PhysicsEngineSimple(self.player_sprite, self.wall_list)
 
+    #
+    # Update ---------------------------------------------------------------------------------------------------------
+    #
+
+    def on_update(self, delta_time):
+        """ Movement and game logic """
+        # Move the player with the physics engine
+        self.physics_engine.update()
+        self.time += delta_time
+
     def on_draw(self):
         """ Render the screen. """
 
@@ -69,6 +87,9 @@ class MyGame(arcade.Window):
         arcade.draw_text(str(self.time), 100, 100, arcade.color.WHITE, 12)
         self.grid.draw()
 
+    #
+    # Input handling --------------------------------------------------------------------------------------------------
+    #
 
     def on_key_press(self, key, modifiers):
         """Called whenever a key is pressed. """
@@ -95,12 +116,9 @@ class MyGame(arcade.Window):
         elif key == arcade.key.RIGHT or key == arcade.key.D:
             self.player_sprite.change_x = 0
 
-    def on_update(self, delta_time):
-        """ Movement and game logic """
-        # Move the player with the physics engine
-        self.physics_engine.update()
-        self.time += delta_time
-
+#
+# Main ---------------------------------------------------------------------------------------------------------------
+#
 
 def main():
     """ Main method """
