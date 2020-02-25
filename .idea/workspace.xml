@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46d71d3c-09f0-42b6-89aa-cccb67bbe3ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools.py" afterDir="false" />
-    </list>
+    <list default="true" id="46d71d3c-09f0-42b6-89aa-cccb67bbe3ef" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +20,7 @@
   </component>
   <component name="ProjectId" id="1YHBPgnze0sFcF4NKTUF18BMBqL" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -92,22 +91,38 @@
       <option name="project" value="LOCAL" />
       <updated>1582664171689</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated Tools.py">
+      <created>1582664581096</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582664581096</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated .gitignore">
+      <created>1582664660699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582664660699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added grid and Tools.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added grid and Tools.py" />
+    <MESSAGE value="Updated Tools.py" />
+    <MESSAGE value="updated .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated .gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="77" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582590068911">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="77" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1582590068911" />
-    <state x="574" y="208" width="1563" height="984" key="CommitChangelistDialog2" timestamp="1582664580564">
+    <state x="574" y="208" width="1563" height="984" key="CommitChangelistDialog2" timestamp="1582664660131">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="574" y="208" width="1563" height="984" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1582664580564" />
+    <state x="574" y="208" width="1563" height="984" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1582664660131" />
     <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1582649888505">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -137,10 +152,10 @@
     </state>
     <state x="121" y="0" width="914" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1582590202737" />
     <state x="242" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1582663522796" />
-    <state x="873" y="429" key="Vcs.Push.Dialog.v2" timestamp="1582664593627">
+    <state x="873" y="429" key="Vcs.Push.Dialog.v2" timestamp="1582664662592">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1582664593627" />
+    <state x="873" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1582664662592" />
     <state x="318" y="175" key="com.intellij.ide.util.TipDialog" timestamp="1582590025961">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
