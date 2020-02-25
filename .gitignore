@@ -6,9 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
-.idea/
+.idea/workspace.xml
 __pycache__/
-stuffasdf
 
 # Distribution / packaging
 .Python
