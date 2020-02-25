@@ -27,6 +27,17 @@ class Grid:
         arcade.draw_rectangle_outline(555, 555, 222, 222, arcade.color.AIR_FORCE_BLUE)
 
 
-class fireCubes:
+class FireBox:
+
+    def __init__(self, x, y, state):
+        self.x = x
+        self.y = y
+        self.state = state
+
+    def draw(self, x, y, state):
+
+        arcade.draw_rectangle_filled(x * 111, y * 111, 222, 222,  arcade.color.YELLOW_ORANGE)
+
+
     def choose_fire(self):
         print()

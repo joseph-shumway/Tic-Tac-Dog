@@ -37,11 +37,13 @@ class MyGame(arcade.Window):
 
         # Separate variable that holds the player sprite
         self.player_sprite = None
+        self.grid = None
+        self.fireBoxes = None
 
         # Our physics engine
         self.physics_engine = None
         self.time = None
-        self.grid = None
+
 
         arcade.set_background_color(arcade.csscolor.MAROON)
 
@@ -53,6 +55,8 @@ class MyGame(arcade.Window):
         """ Set up the game here. Call this function to restart the game. """
         # Create the Sprite lists
         self.player_list = arcade.SpriteList()
+
+        # Create time and grid
         self.time = 0
         self.grid = Tools.Grid()
 
@@ -62,6 +66,9 @@ class MyGame(arcade.Window):
         self.player_sprite.center_x = 333
         self.player_sprite.center_y = 333
         self.player_list.append(self.player_sprite)
+
+        # Create fireboxes and set states to random (0-4)
+        self.fireBoxes.append(FireBox(1,1,0))
 
         # Create the 'physics engine'
         self.physics_engine = arcade.PhysicsEngineSimple(self.player_sprite, self.wall_list)
@@ -83,9 +90,13 @@ class MyGame(arcade.Window):
         arcade.start_render()
 
         # Draw our sprites
-        self.player_list.draw()
+
         arcade.draw_text(str(self.time), 100, 100, arcade.color.WHITE, 12)
         self.grid.draw()
+        self.player_list.draw()
+        for fireBox in self.fireBoxes:
+            fireBox.draw()
+
 
     #
     # Input handling --------------------------------------------------------------------------------------------------
