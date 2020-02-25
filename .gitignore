@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-bleh
+blehbleh
 
 # C extensions
 *.so
@@ -10,6 +10,8 @@ bleh
 .idea/workspace.xml
 .idea/misc.xml
 .idea/vcs.xml
+.idea/Tick-Tack-Dog.iml
+
 __pycache__/
 
 # Distribution / packaging
