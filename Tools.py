@@ -34,9 +34,9 @@ class FireBox:
         self.y = y
         self.state = state
 
-    def draw(self, x, y, state):
+    def draw(self):
 
-        arcade.draw_rectangle_filled(x * 111, y * 111, 222, 222,  arcade.color.YELLOW_ORANGE)
+        arcade.draw_rectangle_filled((self.x * 222) + 111, (self.y * 222) + 111, 222, 222, (self.x * 85, self.y * 85, self.y * 85))
 
 
     def choose_fire(self):

@@ -68,7 +68,10 @@ class MyGame(arcade.Window):
         self.player_list.append(self.player_sprite)
 
         # Create fireboxes and set states to random (0-4)
-        self.fireBoxes.append(FireBox(1,1,0))
+        self.fireBoxes = []
+        for each_row in range(3):
+            for each_col in range(3):
+                self.fireBoxes.append(Tools.FireBox(each_row,each_col,0))
 
         # Create the 'physics engine'
         self.physics_engine = arcade.PhysicsEngineSimple(self.player_sprite, self.wall_list)
